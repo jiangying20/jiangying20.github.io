@@ -1,0 +1,120 @@
+@charset "utf-8";
+
+/* <style> 削除していい*/
+  @import url('https://fonts.googleapis.com/css2?family=Kaisei+Decol&display=swap');
+/* </style> 削除していい*/
+
+
+*{
+  margin: 0;
+  padding: 0;
+/*   line-height: 1; */
+}
+ul{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+img{
+  vertical-align: bottom;
+}
+
+/* 共通部分 */
+header{
+  padding: 30px 0;
+}
+
+h1{
+  text-align: center;
+  font-family: 'Kaisei Decol', serif;
+  font-size: 38px;
+}
+.g-nav{
+  width: 100%;
+  height: 50px;
+  background-color:#CB1B45;
+  margin-bottom: 80px;
+}
+.g-nav>ul{
+display: flex;
+width: 960px;
+margin: 0 auto;
+}
+.g-nav li{
+  width: 20%;
+}
+.g-nav a{
+  display: block;
+  line-height: 50px;/* 文字の垂直方向の位置 */
+  text-align: center;
+  color: #fff;
+  border-right: 1px solid #fff;
+}
+.g-nav a:hover{
+background-color: #6d0c3d;
+}
+.g-nav li:first-of-type>a{    /* 元素：first-of-type>a */
+border-left: 1px solid #fff;
+}
+
+main{
+  width: 960px;
+  margin: 0 auto 100px;
+}
+
+footer{
+  width: 100%;
+  height: 100px;
+  background-color: #CB1B45;
+}
+footer>p{
+color: #fff;
+text-align: center;
+line-height: 100px;
+}
+
+
+/* トップページ部分 */
+.main-visual{
+  margin-bottom: 40px;
+}
+.main-txt>h2{
+  margin-top: 20px;
+}
+.main-txt{
+  text-align: center;
+}
+.main-txt>p{
+  width: 600px;
+  margin: 0 auto;
+  line-height: 2.5;
+}
+
+/* 季節ページ部分 */
+main.page{
+  display: flex;
+}
+.page-img{
+  margin-right: 50px;
+}
+.page-txt>h2{
+  margin-bottom: 20px;
+}
+.page-txt>p{
+  line-height: 1.8;
+}
+
+/* 個別部分 */
+#spring>.g-nav,#spring>footer{
+background-color: #268785;
+}
+#summer>.g-nav,#summer>footer{
+  background-color: #6C6A2D;
+  }
+  #fall>.g-nav,#fall>footer{
+    background-color: #F7D94C;
+    }
+    #winter>.g-nav,#winter>footer{
+      background-color:#8D742A;
+      }
